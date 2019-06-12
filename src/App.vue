@@ -1,7 +1,12 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <input v-model="inputValue">
+
+    <select v-model="selectValue">
+      <option :value="undefined">THIS SHOULDN'T DISPLAY</option>
+      <option value="initial">Initial value</option>
+      <option value="yes">Changed value</option>
+    </select>
   </div>
 </template>
 
@@ -10,6 +15,10 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'app',
+  data: () => ({
+    inputValue: 'hello world',
+    selectValue: 'initial'
+  }),
   components: {
     HelloWorld
   }
@@ -18,11 +27,13 @@ export default {
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+}
+
+input, select {
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  margin-top: 30px;
 }
 </style>

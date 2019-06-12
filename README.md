@@ -1,29 +1,14 @@
-# cypress-input
+# Cypress input value not being preserved
 
-## Project setup
+Installing and running:
+
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Replicating issue:
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Run tests
+- Hover over "GET select" or "- SELECT changed value" in the test information
+- Note that select element now says "THIS SHOULDN'T DISPLAY"
