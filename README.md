@@ -1,4 +1,4 @@
-# Cypress input value not being preserved
+# Cypress input value not being preserved in snapshots
 
 Installing and running:
 
@@ -11,4 +11,4 @@ Replicating issue:
 
 - Run tests
 - Hover over "GET select" or "- SELECT changed value" in the test information
-- Note that select element now says "THIS SHOULDN'T DISPLAY"
+- Note that select element in snapshot now says "THIS SHOULDN'T DISPLAY"
